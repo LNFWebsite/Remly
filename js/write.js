@@ -4,7 +4,7 @@ function Write() {
   let self = this;
   this.start = function() {
     writeSave = setInterval(function() {
-      data.save(data.blink());
+      data.save(function() { data.blink(); });
     }, 5000);
   }
   this.stop = function() {
