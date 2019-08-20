@@ -1,0 +1,59 @@
+<!doctype html>
+<head>
+  <title>Remly - Simple writing and memorization tool</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+  <!-- Icon Stuff -->
+  <link rel="shortcut icon" type="image/x-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAACSElEQVQ4jbWUMWhTURSGvz8NIRTRmi5FXjrUR5dChYJ0rCBYcRIqoosWRFDEoaA4vQ55iKsOLgU3N8XBUewiIogWCi4Krx2aDBKhlAylhtDf5SWpmjQPxHPhwTv3nO+ce+65R8b8D8lnMYrD2hHMDGI9SoJGFp9cxgQmkF+ApzPao36liMNaznhMpoSYBO6AngHr4G2gHiXl/czgOKzmQJPYF5HOAhPAGFCw2ZOoA5vAKvAa+BolwV8BfgPHYXUEtAgs2R4DCh1DCdtISjVugurgp6CVKAm2e4LjsFYyPBReBBXtbkBJGBBgg2Q629Ke4CVwP0qC722fXArNAw8EizYdqKQ00y4UDFZnD1PEvgxEKacLBp8BbgFFdBD458U6/R48DSAVMNdsX2jrh4ZO3hi2dE8wBXyR2TE6jpxL4fuSfgDf0hyH1S10C0iMN4RGBYV3o423c9vHfuaQRmTXgbkoCU4jnZJ8VSgBdgUrthfS01xHegw0gC3sm8DUclKeRcwibRmVAFQJq3lwIUrKu93uqOWBK+AFw22hE8AaeB7zGekJ8BFYiZKgecCvCLSiJGgd+kDA+SgpN+OwNgNes5lf3ii/SQPv9+rftvSdFalTs6tR5/KiJGj182tLplnRbVkdajcQHIe1XBzWuq8uM24AGDgPXq2E1WL6n0/z7lvTbGAzDJoWuhSHtaPAOUMjnWqZpPfliQ/Ae/Aj0F3b45Je2d7MCu7bbpWwWgItCcaxPyE9j5JgJysYD1iVcCs3yKbX6pvxv8ovcOofi12Ry6gAAAAASUVORK5CYII=" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="purple">
+  <link rel="apple-touch-startup-image" href="icon.png">
+  <link rel="apple-touch-icon" href="icon.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="128x128" href="icon.png">
+  <meta name="mobile-web-app-capable" content="yes">
+  <link rel="shortcut icon" sizes="196x196" href="icon.png">
+  <link rel="shortcut icon" sizes="128x128" href="icon.png">
+
+  <link href="css/styles.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet" />
+
+  <script
+			  src="https://code.jquery.com/jquery-3.4.1.min.js"
+			  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+</head>
+<body>
+  <header>
+    <h1 id="title" contenteditable="true">Remly - Simple writing and memorization tool</h1>
+    <button id="save" title="Copy your work to the clipboard">Save</button>
+    <select id="style">
+      <option value="light">Light</option>
+      <option value="dark">Dark</option>
+      <option value="mono">Mono</option>
+      <option value="lnf">LNF</option>
+    </select>
+    <button id="write-mode">Write</button>
+    <button id="undo" class="write">Undo</button>
+    <button id="redo" class="write">Redo</button>
+    <button id="bold" class="write"><b>B</b></button>
+    <button id="italics" class="write"><i>I</i></button>
+    <button id="underline" class="write"><u>U</u></button>
+  </header>
+  <div id="input" contenteditable="true">
+    <p>Welcome to Remly, a simple writing and memorization tool!</p>
+    <p>Remly is capable of turning paragraphs of study information into a grid that makes memorization so much easier. It can also serve as an in-browser writing tool for easy brainstorming.</p>
+    <p>Give it a shot by dropping in some study material here or switching to write mode using the buttons on top.</p>
+  </div>
+  <p id="wordCount"></p>
+  <table id="memTable"></table>
+
+  <script src="js/data.js"></script>
+  <script src="js/toggles.js"></script>
+  <script src="js/mem.js"></script>
+  <script src="js/write.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/cookie.js"></script>
+</body>
+</html>

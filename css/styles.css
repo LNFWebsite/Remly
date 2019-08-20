@@ -1,0 +1,32 @@
+body {
+  font-family: 'Merriweather', serif;
+  margin: 5% 10%;
+}
+button, select#style {
+  background: darkblue;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px;
+  font-size: 1em;
+  font-family: 'Merriweather', serif;
+  margin-bottom: 5px;
+}
+select#style {
+  padding: 7px;
+}
+button:hover {
+  background: blueviolet;
+  cursor: pointer;
+}
+#input {
+  margin: 20px 0;
+}
+#memTable * {
+  border: 1px solid;
+  border-radius: 5px;
+  padding: 5px;
+}
+.write {
+  display: none;
+}

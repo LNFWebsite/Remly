@@ -1,0 +1,17 @@
+body {
+  background: green;
+  color: yellow;
+  margin: 20px 10px;
+}
+#input {
+  background: white;
+  font-family: monospace;
+  border: 1px solid lightgray;
+  padding: 10px;
+  color: black;
+  min-height: 50vh;
+}
+#title {
+  text-align: center;
+  color: red;
+}
