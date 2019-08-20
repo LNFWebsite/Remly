@@ -6,13 +6,13 @@ function Mem() {
     let output = "";
 
     //that|than|which|when|because|in|since|so|though|and
-
+    
     //Copulas
     let keywords = "am|is|are|was|were|be|being|been|have|has|had|do|does|did|shall|will|should|would|may|might|must|can|could";
+    //Prepositions
+    keywords += "|about|above|across|against|among|around|at|after|before|beside|behind|between|beyond|by|down|during|into|for|from|in|except|near|of|off|to|over|past|throughout|through|towards|on|up|without|until|with|under";
     //Dependent Clauses
     //keywords += "|after|in order|unless|although|insofar as|until|as|in that|when|as far as|lest|whenever|as soon as|no matter how|where|as if|now that|wherever|as though|once|whether|because|provided|while|before|since|why|even if|so that|even though|supposing|how|than|if|that|inasmuch as|though|in case|till";
-    //Additionals
-    //keywords += "|which|a|therefore|to";
 
     input = input.replace(new RegExp("([^\\d])(?:\\.|\\!|\\?)([^\\d])", "ig"), "$1" + sep + "$2").split(sep);
 
