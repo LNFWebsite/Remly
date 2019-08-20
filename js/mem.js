@@ -26,7 +26,7 @@ function Mem() {
         for (let x = 0; x < input[i].length; x++) {
           let val = input[i][x].trim();
           if (val !== "") {
-            if (val.split(" ").length <= 1) {
+            if (val.split(" ").length <= 1 && input[i][x + 1] !== undefined) {
               input[i][x + 1] = val + " " + input[i][x + 1];
             }
             else {
